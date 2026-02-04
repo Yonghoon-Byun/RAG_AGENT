@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"D:\\\\DATA\\\\RAG_AGENT\\\\.omc\\\\plans\"\" 2>/dev/null || dir \"D:DATARAG_AGENT.omcplans \")",
+      "Bash(dir:*)",
+      "Bash(if not exist \"D:\\\\DATA\\\\RAG_AGENT\\\\.omc\\\\plans\" mkdir \"D:\\\\DATA\\\\RAG_AGENT\\\\.omc\\\\plans\")",
+      "Bash(git -C \"D:\\\\DATA\\\\RAG_AGENT\" status)",
+      "Bash(git -C \"D:\\\\DATA\\\\RAG_AGENT\" log --oneline -3)",
+      "Bash(git -C \"D:\\\\DATA\\\\RAG_AGENT\" add CLAUDE.md .omc/ .claude/)"
+    ]
+  }
+}

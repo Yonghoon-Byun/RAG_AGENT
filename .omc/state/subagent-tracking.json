@@ -1,0 +1,80 @@
+{
+  "agents": [
+    {
+      "agent_id": "abfb232",
+      "agent_type": "oh-my-claudecode:planner",
+      "started_at": "2026-02-04T04:20:10.777Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-02-04T04:25:09.423Z",
+      "duration_ms": 298646
+    },
+    {
+      "agent_id": "a6197bd",
+      "agent_type": "oh-my-claudecode:critic",
+      "started_at": "2026-02-04T04:25:45.755Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-02-04T04:27:49.045Z",
+      "duration_ms": 123290
+    },
+    {
+      "agent_id": "a07a6bf",
+      "agent_type": "oh-my-claudecode:planner",
+      "started_at": "2026-02-04T04:28:09.980Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-02-04T04:33:41.002Z",
+      "duration_ms": 331022
+    },
+    {
+      "agent_id": "a63913a",
+      "agent_type": "oh-my-claudecode:critic",
+      "started_at": "2026-02-04T04:34:12.871Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-02-04T04:34:57.792Z",
+      "duration_ms": 44921
+    },
+    {
+      "agent_id": "a8d54f5",
+      "agent_type": "oh-my-claudecode:explore-medium",
+      "started_at": "2026-02-04T04:36:04.192Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-02-04T04:38:45.430Z",
+      "duration_ms": 161238
+    },
+    {
+      "agent_id": "a455cbf",
+      "agent_type": "oh-my-claudecode:planner",
+      "started_at": "2026-02-04T08:09:59.721Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-02-04T08:23:01.588Z",
+      "duration_ms": 781867
+    },
+    {
+      "agent_id": "ae4d94d",
+      "agent_type": "oh-my-claudecode:critic",
+      "started_at": "2026-02-04T08:24:31.384Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-02-04T08:26:15.279Z",
+      "duration_ms": 103895
+    },
+    {
+      "agent_id": "abf5494",
+      "agent_type": "oh-my-claudecode:critic",
+      "started_at": "2026-02-04T08:28:10.810Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-02-04T08:29:42.665Z",
+      "duration_ms": 91855
+    }
+  ],
+  "total_spawned": 8,
+  "total_completed": 8,
+  "total_failed": 0,
+  "last_updated": "2026-02-04T08:30:09.686Z"
+}
