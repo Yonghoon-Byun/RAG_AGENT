@@ -6,7 +6,14 @@
       "Bash(if not exist \"D:\\\\DATA\\\\RAG_AGENT\\\\.omc\\\\plans\" mkdir \"D:\\\\DATA\\\\RAG_AGENT\\\\.omc\\\\plans\")",
       "Bash(git -C \"D:\\\\DATA\\\\RAG_AGENT\" status)",
       "Bash(git -C \"D:\\\\DATA\\\\RAG_AGENT\" log --oneline -3)",
-      "Bash(git -C \"D:\\\\DATA\\\\RAG_AGENT\" add CLAUDE.md .omc/ .claude/)"
+      "Bash(git -C \"D:\\\\DATA\\\\RAG_AGENT\" add CLAUDE.md .omc/ .claude/)",
+      "Bash(git -C \"D:\\\\DATA\\\\RAG_AGENT\" diff --cached --stat)",
+      "Bash(git -C \"D:\\\\DATA\\\\RAG_AGENT\" commit -m \"$\\(cat <<''EOF''\nAdd RAG chunking strategy plans and project configuration\n\n- Add CLAUDE.md with project overview and development guide\n- Add industrial RAG chunking strategy plan \\(10-week GraphRAG roadmap\\)\n- Add short-term chunking strategy plan \\(1-2 week prototype\\)\n- Add RALPLAN state and configuration files\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git -C \"D:\\\\DATA\\\\RAG_AGENT\" push origin main)",
+      "Bash(ls -la \"D:\\\\DATA\\\\RAG_AGENT\\\\docs\"\" 2>&1 || echo \"docs directory does not exist \")",
+      "Bash(grep:*)",
+      "Bash(git config:*)",
+      "Bash(git -C \"D:\\\\DATA\\\\RAG_AGENT\" add docs/ PROJECT_SUMMARY.md .claude/settings.local.json)"
     ]
   }
 }
