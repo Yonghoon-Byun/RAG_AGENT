@@ -9,15 +9,29 @@
 ## 핵심 파일
 
 ### 데이터
-- `design_standards_db.json` - 원본 설계기준 데이터 (28개 최상위 섹션)
-- `design_standards_db_restructured.json` - 재구성된 데이터 (238개 섹션, 계층 구조)
+- `data/design_standards_db.json` - 원본 설계기준 데이터 (28개 최상위 섹션)
+- `data/design_standards_db_restructured.json` - 재구성된 데이터 (238개 섹션, 계층 구조)
 
 ### 스크립트
-- `run_restructure.py` - JSON 계층 구조 재구성
-- `insert_to_postgres.py` - PostgreSQL 데이터 삽입
+- `scripts/run_restructure.py` - JSON 계층 구조 재구성
+- `scripts/insert_to_postgres.py` - PostgreSQL 데이터 삽입
+- `scripts/analyze_excel.py` - KCI 엑셀 데이터 분석
+
+### 노트북
+- `notebooks/restructure_json.ipynb` - JSON 재구성 실험 노트북
 
 ### SQL
 - `sql/01_create_tables.sql` - 테이블, 인덱스, 함수 정의
+
+### 문서
+- `docs/DB_SETUP.md` - 데이터베이스 설정 가이드
+- `docs/QUICK_START.md` - 빠른 시작 가이드
+- `docs/PROJECT_SUMMARY.md` - 프로젝트 요약
+- `docs/GIT_SETUP_GUIDE.md` - Git/GitHub 설정 가이드
+
+### 참고 자료
+- `references/GraphRAG_paper.pdf` - GraphRAG 논문
+- `references/KCI_*.json|xlsx` - KCI 논문 데이터
 
 ## 데이터베이스 정보
 
@@ -47,16 +61,16 @@ Table: design_sections (238 rows)
 
 ```bash
 # JSON 재구성
-python run_restructure.py
+python scripts/run_restructure.py
 
 # DB 삽입
-python insert_to_postgres.py
+python scripts/insert_to_postgres.py
 
 # 토큰 분석 (향후)
-python analyze_tokens.py
+python scripts/analyze_tokens.py
 ```
 
 ## 참고 문서
 
-- GraphRAG 논문: "From Local to Global: A GraphRAG Approach to Query-Focused Summarization"
+- GraphRAG 논문: `references/GraphRAG_paper.pdf` ("From Local to Global: A GraphRAG Approach to Query-Focused Summarization")
 - 핵심 파라미터: 600 토큰 청크, 100 토큰 오버랩
